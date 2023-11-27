@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef ,useState} from 'react'
 
 // Styling
 import '../assets/styles/ProjectStyles.css'
@@ -7,9 +7,9 @@ const Project =()=>{
 
     return(
         <React.Fragment>
-            <div className='projects' id="projects">
+            <div  id="projects" className='projects'>
 
-                <div className='project'>
+                <div className={'project'}>
                     <div className='project-image borderRight'>
                         <img 
                             src={require('../assets/images/recipe.PNG')} 
@@ -71,6 +71,44 @@ const Project =()=>{
                     </div>
 
            
+                </div>
+
+                <div className='project'>
+                    <div className='project-image borderRight'>
+
+                        <img 
+                            src={require('../assets/images/hobbie-login.PNG')} 
+                            alt="Hobbie's Login form"
+                            className='img-small'
+                        />
+
+                        <img 
+                            src={require('../assets/images/hobbie-profile.PNG')} 
+                            alt="The profile of a hobbie user"
+                            className='img-small'
+                        />   
+
+                        <img 
+                            src={require('../assets/images/hobbie-chat.PNG')} 
+                            alt="Chatting system of hobbie"
+                            className='img-small'
+                        />
+                       
+                    </div>
+
+                    <div className='project-description'>
+                        <h2>Hobbie</h2>
+                        <div className='content'>
+                            A new social media platform to connect people with thesame center of interest.<br/>
+                            I developped the complete fullStack app with react, nodejs and mongoDb for the database.<br/>
+                            I used the socket library for the implementation of the chatting system .<br/>
+                            <h3>Draw Backs</h3>
+                            Not yet deployed in the cloud. <br/>
+                            Still working on the mobile version in react native.<br/>
+                           <br/><button> Github repository <i className='fab fa-github'></i></button>
+
+                        </div>
+                    </div>
                 </div>
 
             </div>

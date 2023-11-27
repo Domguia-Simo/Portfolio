@@ -6,4 +6,5 @@ body{
     letter-spacing: 1px;
     background-color: rgba(250,250,250,1);
     user-select: none;
+    overflow-x: hidden;
 }

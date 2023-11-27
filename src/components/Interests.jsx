@@ -1,12 +1,44 @@
 import React from "react";
 
+// Styling
+import '../assets/styles/InterestStyles.css'
+
 const Interests =()=>{
     return(
         <React.Fragment>
-            <h1>
+            <h2>
 
+                <div className="interest-container">
+                    <div className="interests">
+                        <div>
+                           <h2> 🖥👨‍💻💻</h2>
+                            Programming
+                        </div>
 
-            </h1>
+                        <div>
+                            <h2>🎮🏆😈</h2>
+                            Gaming
+                        </div>
+
+                        <div>
+                            <h2>⛩👺🎌</h2>
+                            Animes & Mangas
+                        </div>
+
+                        <div>
+                            <h2>💪🏋️‍♂️⚽</h2>
+                            Sports
+                        </div>
+
+                        <div>
+                            <h2>🎶🎵🖖</h2>
+                            Music
+                        </div>
+
+                    </div>
+                </div>
+
+            </h2>
         </React.Fragment>
     )
 }

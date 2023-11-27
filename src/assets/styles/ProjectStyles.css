@@ -2,14 +2,17 @@
     display: flex;
     flex-direction: column;
     margin: 100px 0px;
-    background-color: white;
-    row-gap: 100px;
+    align-items: center;
+    row-gap: 75px;
 }
 
 .project{
     display: flex;
-    border:solid 1px rgba(0,0,0,0.1);
-    padding:100px 20px;
+    background-color: white;
+    border:solid 1px rgba(0,0,0,0.4);
+    border-radius: 20px;
+    width:90%;
+    padding:75px 20px;
     box-shadow: 2px 5px 55px rgba(0,0,0,0.1);
     align-items: center;
 }
@@ -38,4 +41,17 @@
     text-align: left;
     line-height: 30px;
     font-size: large;
+}
+.animate{
+    color:red;
+    animation-name: appear;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@keyframes appear{
+    to{
+        transform:translateX(100%)
+    }
 }
