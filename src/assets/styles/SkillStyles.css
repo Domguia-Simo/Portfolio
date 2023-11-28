@@ -3,16 +3,20 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .skill-container div{
     border-bottom:solid 1px rgba(0,0,0,0.2);
-    width:60%;
-    height:80px;
+    width:70%;
+    height:60px;
     overflow:hidden;
+    display: flex;
+    align-items: center;
 }
 
 .skill-container div span{
+    flex:1;
     display: flex;
     padding:10px;
     gap:20px;
@@ -20,33 +24,30 @@
     align-items: center;
 }
 
-.right-motion{
-    transform: translateX(-100%);
-    animation-name: moveRight;
-    animation-iteration-count: infinite;
-    animation-delay: 10s;
-    animation-duration: 20s;
+.skill-container div img{
+    width:40px;
 }
 
-.left-motion{
-    transform: translateX(100%);
-    animation-name: moveLeft;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-    animation-duration: 20s;
-}
-@keyframes moveRight{
-    to{
-        transform: translateX(100%);
-    }
-}
-@keyframes moveLeft{
-  to{
-        transform: translateX(-100%);
+
+/* For mobile devices */
+/* Media max width : 500 px */
+@media screen and (max-width:500px){
+    
+    .skill-container div{
+        width:90%;
+        height:fit-content;
+        flex-direction: column;
     }
     
+    .skill-container div span{
+        width:90%;
+        display: grid;
+        margin-top:-20px;
+        grid-template-columns:1fr 1fr 1fr;
+        justify-items: center;
+        align-content: center;
+    }
+    
+    
 }
-
-.skill-container div img{
-    width:50px;
-}
+/* End of mobile device : 500px */

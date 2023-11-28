@@ -11,8 +11,8 @@ const NavBar=()=>{
                 <div className='name'>Domguia Simo Ulrich </div>
 
                 <div className='left-bar'>  
-                    <span>Projects</span>
                     <span>Skills</span>
+                    <span>Projects</span>
                     <span>Interests</span>
                 </div>
 

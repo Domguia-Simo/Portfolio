@@ -3,12 +3,18 @@ import React,{useRef ,useState} from 'react'
 // Styling
 import '../assets/styles/ProjectStyles.css'
 
+//brands svgs 
+import react from '../assets/fontAwesome/svgs/brands/react.svg'
+import node from '../assets/fontAwesome/svgs/brands/node.svg'
+import sass from '../assets/fontAwesome/svgs/brands/sass.svg'
+
 const Project =()=>{
 
     return(
         <React.Fragment>
             <div  id="projects" className='projects'>
 
+                {/* Meant for large screen devices > 1350px */}
                 <div className={'project'}>
                     <div className='project-image borderRight'>
                         <img 
@@ -109,6 +115,50 @@ const Project =()=>{
 
                         </div>
                     </div>
+                </div>
+
+
+                {/* Essentially for mobile or small screen size devices */}
+                <div className='project-card'>
+                    <strong style={{display:'flex' ,alignItems:'center' ,fontSize:'x-large'}}>
+                        Recipe Finder &nbsp;<img src={react} alt='react' title='react'/>
+                    </strong>
+                    <br/>
+                    <div>
+                        A web app to find the recipe of various meals.<br/>
+                        Worked only on the front-end part and used external api endpoints.<br/>
+                        
+                    </div>
+                    <button>Github Repo</button>
+                </div>
+
+                <div className='project-card'>
+                    <strong style={{display:'flex' ,alignItems:'center' ,fontSize:'x-large'}}>
+                        IAI SMS &nbsp;<img src={react} alt='react' title='react'/>
+                        &nbsp;&nbsp; <img src={node} alt='node' title='node'/>
+                    </strong>
+                    <br/>
+                    <div>
+                        A school management system(SMS), to manage and control school's activities.<br/>
+                        Worked as a front-end lead in the platform development in react and part of the backend development with nodejs/expressjs. <br/>
+                        
+                    </div>
+                    <button>Github Repo</button>
+                </div>
+
+                <div className='project-card'>
+                    <strong style={{display:'flex' ,alignItems:'center' ,fontSize:'x-large'}}>
+                        Hobbie &nbsp;<img src={react} alt='react' title='react'/>
+                        &nbsp;&nbsp; <img src={node} alt='node' title='node'/>
+                        &nbsp;&nbsp; <img src={sass} alt='sass' title='sass'/>
+                    </strong>
+                    <br/>
+                    <div>
+                        A social media platform,which main purpose is to connect users wth same center of interest.<br/>
+                        Fully developped the front and back-end.  <br/>
+                        
+                    </div>
+                    <button>Github Repo</button>
                 </div>
 
             </div>

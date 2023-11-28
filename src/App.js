@@ -16,8 +16,8 @@ const App =()=>{
     <React.Fragment>
       <NavBar/>
       <Description/>
-      <Project/>
       <Skills/>
+      <Project/>
       <Interests/>
       <br/><br/>
       <Footer/>

@@ -29,3 +29,38 @@
     cursor:pointer;
     margin-right:20px;
 }
+
+
+/* For mobile devices */
+/* Media max width : 500 px */
+@media screen and (max-width:500px){
+
+    .navbar{
+        font-size:medium;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .name{
+        display: none;
+    }
+    /* .navbar::before{
+        content:'DSU';
+        position: absolute;
+        left:20px;
+        font-weight: bold;
+        font-size: large;
+    } */
+
+    .left-bar{
+        column-gap: 30px;
+        font-weight: bold;
+    }
+    
+    .right-bar{
+        display: none;
+    }
+    
+    
+}
+/* End of mobile device : 500px */

@@ -1,5 +1,6 @@
 import React from "react";
 
+// brands svgs
 import bootstrap from '../assets/fontAwesome/svgs/brands/bootstrap.svg'
 import react from '../assets/fontAwesome/svgs/brands/react.svg'
 import java from '../assets/fontAwesome/svgs/brands/java.svg'
@@ -17,6 +18,7 @@ import dribbble from '../assets/fontAwesome/svgs/brands/dribbble.svg'
 import python from '../assets/fontAwesome/svgs/brands/python.svg'
 
 
+
 // Styling
 import '../assets/styles/SkillStyles.css'
 
@@ -27,36 +29,52 @@ const Skills =()=>{
                 <div className="skill-container">
 
                     <div>
-                        <span className="right-motion">
-                            <img src={html} alt="html" />
-                            <img src={css} alt="css" />
-                            <img src={js} alt="js"/>
-                            <img src={php} alt="php"/>
-                            <img src={java} alt="java"/>
-                            <img src={python} alt="python"/>
+                        <h6>Languages <i className="fas fa-chevron-right"></i></h6>
+                        <span >
+                            <i className="fas fa-c" title="C language"></i>
+                            <img src={html} alt="html" title="html"/>
+                            <img src={css} alt="css" title="css"/>
+                            <img src={js} alt="js" title="js"/>
+                            <img src={java} alt="java" title="java" />
+                            <img src={php} alt="php" title="php"/>
+                            <img src={python} alt="python" title="python"/>
 
-                            <i className="fab fa-c"></i>
 
                         </span>
 
                     </div>
 
                     <div>
-                        <span className="left-motion">
-                            <img src={bootstrap} alt="bootstrap" />
-                            <img src={sass} alt="sass"/>
-                            <img src={react} alt="react"/>
-                            <img src={laravel} alt="laravel"/>
-                            <img src={node} alt="node"/>
+                        <h6>Frameworks <i className="fas fa-chevron-right"></i></h6>
+                        <span >
+                            <img src={bootstrap} alt="bootstrap" title="bootstrap" />
+                            <img src={sass} alt="sass" title="sass"/>
+                            <img src={react} alt="react" title="reactjs & react native"/>
+                            <img src={node} alt="node" title="nodejs"/>
+                            <i className="fas fa-power-off" title="spring boot"></i>
+                            <img src={laravel} alt="laravel" title="laravel"/>
+
+                        </span>
+
+                    </div>
+
+                    <div>
+                        <h6>Database <i className="fas fa-chevron-right"></i></h6>
+                        <span >
+                            <i title="mysql">sql</i>
+                            <i title="postgres">psql</i>
+                            <i title="mongodb">mongodb</i>
+
                         </span>
                     </div>
 
                     <div>
-                        <span className="right-motion">
-                            <img src={linux} alt="linux"/>
-                            <img src={mdb} alt="mdb"/>
-                            <img src={github} alt="github"/>
-                            <img src={dribbble} alt="dribbblr"/>
+                        <h6>Techs <i className="fas fa-chevron-right"></i></h6>
+                        <span >
+                            <img src={linux} alt="linux" title="linux"/>
+                            <img src={mdb} alt="mdb" title="mdb"/>
+                            <img src={github} alt="github" title="github"/>
+                            <img src={dribbble} alt="dribbble" title="dribbble"/>
                         </span>
 
                     </div>
