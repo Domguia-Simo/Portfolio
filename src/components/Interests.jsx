@@ -8,7 +8,7 @@ const Interests =()=>{
         <React.Fragment>
             <h2>
 
-                <div className="interest-container">
+                <div className="interest-container" id="interests">
                     <div className="interests">
                         <div>
                            <h2> 🖥👨‍💻💻</h2>

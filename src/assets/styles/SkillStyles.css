@@ -29,6 +29,26 @@
 }
 
 
+/* For small computers */
+/* Media max width : 1350px */
+@media screen and ( max-width:1350px){
+
+}
+/* End of small computers ; 1350px */
+
+
+/* For tablet devices */
+/* Media max width : 900 px */
+@media screen and (max-width:900px){
+    
+    .skill-container div{
+        width:90%;
+    }
+    
+}
+/* End of tablet devices : 900 px */
+
+
 /* For mobile devices */
 /* Media max width : 500 px */
 @media screen and (max-width:500px){
@@ -47,7 +67,6 @@
         justify-items: center;
         align-content: center;
     }
-    
     
 }
 /* End of mobile device : 500px */

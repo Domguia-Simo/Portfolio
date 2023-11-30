@@ -31,6 +31,25 @@
 }
 
 
+/* For tablet devices */
+/* Media max width : 900 px */
+@media screen and (max-width:900px){
+    .navbar{
+        justify-content: space-between;
+        font-size:medium;
+    }
+
+    .left-bar{
+        column-gap: 30px;
+    }
+    
+    .right-bar{
+        column-gap: 25px;
+    }
+}
+/* End of tablet devices */
+
+
 /* For mobile devices */
 /* Media max width : 500 px */
 @media screen and (max-width:500px){
@@ -44,13 +63,6 @@
     .name{
         display: none;
     }
-    /* .navbar::before{
-        content:'DSU';
-        position: absolute;
-        left:20px;
-        font-weight: bold;
-        font-size: large;
-    } */
 
     .left-bar{
         column-gap: 30px;

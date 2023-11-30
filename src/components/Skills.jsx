@@ -26,7 +26,7 @@ const Skills =()=>{
     return(
         <React.Fragment>
             <h1>
-                <div className="skill-container">
+                <div className="skill-container" id="skills">
 
                     <div>
                         <h6>Languages <i className="fas fa-chevron-right"></i></h6>

@@ -3,7 +3,7 @@ import React from 'react'
 // Styling
 import '../assets/styles/NavBarStyles.css'
 
-const NavBar=()=>{
+const NavBar=({active ,setActive})=>{
     return(
         <React.Fragment>
             <div className='navbar'>
@@ -11,9 +11,30 @@ const NavBar=()=>{
                 <div className='name'>Domguia Simo Ulrich </div>
 
                 <div className='left-bar'>  
-                    <span>Skills</span>
-                    <span>Projects</span>
-                    <span>Interests</span>
+                    <span><a href="#skills" 
+                        onClick={()=>setActive('skills')}
+                        style={{textDecoration:'none' , 
+                        color:active === 'skills' ? 'blue':'black' ,
+                        borderBottom:active === 'skills' ? 'solid 2px blue':'solid 2px transparent' ,
+                        transition:'all 0.3s ease-in-out'}}>
+                        Skills</a>
+                    </span>
+
+                    <span><a href="#projects" 
+                        onClick={()=>setActive('projects')}
+                        style={{textDecoration:'none' , color:active === 'projects' ? 'blue':'black' ,
+                        borderBottom:active === 'projects' ? 'solid 2px blue':'solid 2px transparent',
+                        transition:'all 0.3s ease-in-out'}}>
+                        Projects</a>
+                    </span>
+
+                    <span><a href="#interests" 
+                        onClick={()=>setActive('interests')}
+                        style={{textDecoration:'none' , color:active === 'interests' ? 'blue':'black' ,
+                        borderBottom:active === 'interests' ? 'solid 2px blue':'solid 2px transparent',
+                        transition:'all 0.3s ease-in-out'}}>
+                        Interests</a>
+                    </span>
                 </div>
 
                 <div className='right-bar'>

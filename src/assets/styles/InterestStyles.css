@@ -15,7 +15,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
+
+/* For small computers */
+/* Media max-width : 1350px */
+@media screen and (max-width:1350px){
+    .interests{
+        width: 100%;
+    }
+      
+}
+/* End of small computer */
+
+
+/* For tablet device */
+/* Media max width : 900 px */
+@media screen and (max-width:900px){
+
+    .interests{
+        width: 95%;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+      
+}
+/* End of tablet devices */
 
 
 /* For mobile devices */
@@ -25,7 +50,7 @@
     .interests{
         width: 95%;
         display: grid;
-        grid-template-columns:repeat(auto-fill ,minmax(1fr));
+        grid-template-columns:1fr;
     }
     
 }
