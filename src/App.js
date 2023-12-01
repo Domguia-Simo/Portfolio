@@ -1,4 +1,4 @@
-import React ,{useLayoutEffect, useRef, useState} from 'react'
+import React ,{ useRef, useState ,useEffect} from 'react'
 
 // Components
 import NavBar from './components/Navbar'
@@ -19,58 +19,24 @@ const App =()=>{
 
 
   const [active ,setActive] = useState('skills')
+  
+  useEffect(()=>{
 
-  useLayoutEffect(()=>{
-    const skillObserver = new IntersectionObserver((entries ,observer)=>{
+    let sections = [skillRef ,projectRef ,interestRef]
+
+    const observer = new IntersectionObserver((entries)=>{
       entries.forEach(entry => {
         if(entry.isIntersecting){
-          if(active !== 'skills'){
-            setActive('skills')
-          }
+          setActive(entry.target.getAttribute('name'))
         }
       })
     },{
-      // root:null,
-      // rootMargin:'0px',
-      threshold:0.2
+      threshold:0.3
     })
-    // if(skillRef.current){
-      skillObserver.observe(skillRef.current)
-    // }
-  
-    const projectObserver = new IntersectionObserver((entries ,observer)=>{
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          if(active !== 'projects'){
-            setActive('projects')
-          }
-        }
-      })
-    },{ 
-      // root:null,
-      // rootMargin:'0px',
-      threshold:0.2
+    sections.forEach(section => {
+      if(section != null)
+        observer.observe(section.current)
     })
-    // if(projectRef.current){
-      projectObserver.observe(projectRef.current)
-    // }
-  
-    const interestObserver = new IntersectionObserver((entries ,observer)=>{
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          if(active !== 'interests'){
-            setActive('interests')
-          }
-        }
-      })
-    },{
-      // root:null,
-      // rootMargin:'0px',
-      threshold:0.2
-    })   
-    // if(interestRef.current){
-      interestObserver.observe(interestRef.current)
-    // }
 
   })
 
@@ -79,15 +45,15 @@ const App =()=>{
       <NavBar active={active} setActive={setActive}/>
       <Description/>
 
-      <div ref={skillRef}>
+      <div ref={skillRef} name='skills'>
         <Skills />
       </div>
 
-      <div ref={projectRef}>
+      <div ref={projectRef} name='projects'>
         <Project />
       </div>
 
-      <div ref={interestRef}>
+      <div ref={interestRef} name='interests'>
         <Interests/>
       </div>
 
