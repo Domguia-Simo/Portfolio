@@ -17,8 +17,6 @@ import github from '../assets/fontAwesome/svgs/brands/github.svg'
 import dribbble from '../assets/fontAwesome/svgs/brands/dribbble.svg'
 import python from '../assets/fontAwesome/svgs/brands/python.svg'
 
-
-
 // Styling
 import '../assets/styles/SkillStyles.css'
 

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import resume from '../assets/images/My Resume.docx'
+
 // Styling
 import '../assets/styles/DescriptionStyles.css'
 
@@ -19,10 +21,10 @@ const Description =()=>{
                         A FullStack Software Engineer<br/>
                         💻🖥📱👨‍💻👌
                         
-                    </h1>
+                    </h1><br/>
 
                     <div className='options'>
-                        <button>Download Resume</button>
+                        <a className='button' href={resume}>Download Resume</a>&nbsp;
                     </div><br/>
 
                 </div>

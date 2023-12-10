@@ -1,4 +1,4 @@
-import React,{useRef ,useState} from 'react'
+import React from 'react'
 
 // Styling
 import '../assets/styles/ProjectStyles.css'
@@ -41,7 +41,7 @@ const Project =()=>{
                             <h3>Draw Backs</h3>
                             Abnormal behaviour when searching with typing errors. <br/>
                             Unavailability of some well known meals.<br/>
-                           <br/><button> Github repository <i className='fab fa-github'></i></button>
+                           <br/><button onClick={()=>window.location = 'https://github.com/Domguia-Simo/Recipe_Finder'}> Github repository <i className='fab fa-github'></i></button>
 
                         </div>
                     </div>
@@ -57,7 +57,7 @@ const Project =()=>{
                             I worked as a front-end lead in <strong>Reactjs</strong> and part of the backend using <strong>Nodejs</strong> and <strong>Mongodb</strong> as the database.<br/>
                         <h3>Experience</h3>
                         This is where i learned most of my backend knowldge with nodejs and using non relational dbs.<br/>
-                        <br/><button disabled>Github Repository <i className='fab fa-github'></i></button>
+                        <br/><button onClick={()=>window.location = 'https://github.com/AndersonAgbor/IAI-SMS'}>Github Repository <i className='fab fa-github'></i></button>
                         </div>
                     </div>
 
@@ -111,7 +111,7 @@ const Project =()=>{
                             <h3>Draw Backs</h3>
                             Not yet deployed in the cloud. <br/>
                             Still working on the mobile version in react native.<br/>
-                           <br/><button> Github repository <i className='fab fa-github'></i></button>
+                           <br/><button onClick={()=> window.location = 'https://github.com/Domguia-Simo/Hobbie-Web-Frontend'}> Github repository <i className='fab fa-github'></i></button>
 
                         </div>
                     </div>
@@ -129,7 +129,7 @@ const Project =()=>{
                         Worked only on the front-end part and used external api endpoints.<br/>
                         
                     </div>
-                    <button>Github Repo</button>
+                    <button onClick={()=>window.location = 'https://github.com/Domguia-Simo/Recipe_Finder'}>Github Repo</button>
                 </div>
 
                 <div className='project-card'>
@@ -143,7 +143,7 @@ const Project =()=>{
                         Worked as a front-end lead in the platform development in react and part of the backend development with nodejs/expressjs. <br/>
                         
                     </div>
-                    <button>Github Repo</button>
+                    <button onClick={()=>window.location = 'https://github.com/AndersonAgbor/IAI-SMS'}>Github Repo</button>
                 </div>
 
                 <div className='project-card'>
@@ -158,7 +158,7 @@ const Project =()=>{
                         Fully developped the front and back-end.  <br/>
                         
                     </div>
-                    <button>Github Repo</button>
+                    <button onClick={()=> window.location = 'https://github.com/Domguia-Simo/Hobbie-Web-Frontend'}>Github Repo</button>
                 </div>
 
             </div>
