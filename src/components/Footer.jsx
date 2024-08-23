@@ -9,10 +9,10 @@ const Footer =()=>{
         <React.Fragment>
             <div className='footer'>
                 Domguia Simo Ulrich &nbsp;&nbsp;&nbsp;    
-                <i className='fab fa-google'></i>&nbsp;&nbsp;
-                <i className='fab fa-facebook'></i>&nbsp;&nbsp;
-                <i className='fab fa-twitter'></i>&nbsp;&nbsp;
-                <i className='fab fa-github'></i>
+                <a href="mailto:domguiasimoulrich@gmail.com" className='fab fa-google'></a>&nbsp;&nbsp;
+                {/* <a href="" className='fab fa-facebook'></a>&nbsp;&nbsp; */}
+                {/* <i className='fab fa-twitter'></i>&nbsp;&nbsp; */}
+                <a href="https://github.com/Domguia-Simo?tab=repositories" className='fab fa-github'></a>
             </div>
         </React.Fragment>
     )

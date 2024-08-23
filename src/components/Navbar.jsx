@@ -38,10 +38,10 @@ const NavBar=({active ,setActive})=>{
                 </div>
 
                 <div className='right-bar'>
-                    <span title='github'><i className='fab fa-github'></i></span>
-                    <span title='linkedin'><i className='fab fa-linkedin'></i></span>
-                    <span title='gmail'><i className='fab fa-google'></i></span>
-                    <span title='twitter'><i className='fab fa-twitter'></i></span>
+                    <a href="https://github.com/Domguia-Simo?tab=repositories" title='github'><i className='fab fa-github'></i></a>
+                    <a  href="https://www.linkedin.com/in/ulrich-domguia-simo-912b1b322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title='linkedin'><i className='fab fa-linkedin'></i></a>
+                    <a href="mailto:domguiasimoulrich@gmail.com" title='gmail'><i className='fab fa-google'></i></a>
+                    {/* <span title='twitter'><i className='fab fa-twitter'></i></span> */}
                 </div>
 
             </div>

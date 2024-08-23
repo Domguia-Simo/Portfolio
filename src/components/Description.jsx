@@ -1,6 +1,6 @@
 import React from 'react'
 
-import resume from '../assets/images/My Resume.docx'
+import resume from '../assets/images/My Resume.pdf'
 
 // Styling
 import '../assets/styles/DescriptionStyles.css'
